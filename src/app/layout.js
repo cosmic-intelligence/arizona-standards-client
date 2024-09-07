@@ -31,6 +31,18 @@ export default function RootLayout({ children }) {
 
           <Footer />
         </Provider>
+        <iframe
+          src="https://cosmic-chatbot-nextjs-ixvp75opk-cosmic-intelligences-projects.vercel.app/"
+          style={{
+            position: "fixed",
+            bottom: "0",
+            right: "0",
+            width: "500px", // Updated width
+            height: "400px", // Updated height
+            border: "none",
+            padding: "20px", // Added padding
+          }}
+        ></iframe>
       </body>
     </html>
   );
