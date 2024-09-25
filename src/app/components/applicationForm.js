@@ -42,7 +42,7 @@ const ApplicationForm = ({ baseUrl }) => {
 
     axios
       .post(
-        `https://all-state-server-837c9210fde1.herokuapp.com/api/submit/application`,
+        baseUrl,
         formData
       )
       .then((response) => {
