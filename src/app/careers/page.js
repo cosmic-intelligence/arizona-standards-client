@@ -7,6 +7,7 @@ import career from "../../../public/career.jpg";
 import PageWrapper from "../components/pageWrapper";
 
 function page() {
+  console.log("BASE", process.env.BASE);
   return (
     <PageWrapper>
       <OpenAnimation />
