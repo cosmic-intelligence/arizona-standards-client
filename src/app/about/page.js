@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import AboutHeader from "../components/aboutHeader";
 import OpenAnimation from "../components/openAnimation";
 
 function page() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <OpenAnimation />

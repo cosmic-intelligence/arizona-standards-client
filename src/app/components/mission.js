@@ -24,14 +24,14 @@ function Mission() {
   return (
     <div className="h-screen w-full flex justify-center items-center">
       <div className="p-4 max-w-3xl">
-        <p className="font-forum text-5xl text-center slide-text">
+        <p className="text-5xl text-center slide-text">
           Our Mission
         </p>
         <p className="font-bold text-lg text-center mt-6 slide-text">
           Constructing Excellence, Every Project, Every Time!
         </p>
         <p className="text-center text-2xl lg:text-4xl sm:max-w-3xl mt-4 slide-text">
-          At All State Specialist LLC, we are on a mission to redefine
+          At Arizona Standards, we are on a mission to redefine
           <span className="font-bold text-orange"> excellence</span> in the
           construction industry. With unwavering commitment, we craft each
           project with meticulous attention to detail, delivering{" "}

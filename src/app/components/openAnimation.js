@@ -72,9 +72,9 @@ function OpenAnimation() {
 
   return (
     <div className="w-screen h-screen fixed z-[100] flex flex-col justify-end">
-      <div className="bg-black-950 overlay w-full h-full flex flex-col items-center justify-center">
+      <div className="bg-white overlay w-full h-full flex flex-col items-center justify-center">
         <div className="h-24 w-full overflow-hidden flex justify-center items-center">
-          <p className="text-animation text-3xl lg:text-7xl text-center font-bold text-orange tracking-tighter">
+          <p className="text-animation text-3xl lg:text-7xl text-center font-bold tracking-tighter">
             {phrase}
           </p>
         </div>

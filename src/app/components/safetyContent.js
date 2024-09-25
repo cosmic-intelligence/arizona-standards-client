@@ -29,7 +29,7 @@ function SafetyContent() {
   return (
     <div className="w-full flex flex-col justify-center items-center mt-28">
       <p className="mt-20 mb-40 text-2xl lg:text-4xl sm:max-w-3xl">
-        At All State Specialist LLC,
+        At Arizona Standards,
         <span className="font-bold text-orange">
           {" "}
           the safety of our employees, clients, and the public is paramount in
@@ -44,7 +44,7 @@ function SafetyContent() {
         <About
           header="Continuous Improvement:"
           body="
-        We believe that safety is a continuous journey of improvement. At All State Specialist LLC., we constantly review and update our safety protocols to incorporate the latest best practices and technological advancements. We conduct regular safety meetings, training sessions, and toolbox talks to keep our team informed and engaged in safety practices.
+        We believe that safety is a continuous journey of improvement. At Arizona Standards., we constantly review and update our safety protocols to incorporate the latest best practices and technological advancements. We conduct regular safety meetings, training sessions, and toolbox talks to keep our team informed and engaged in safety practices.
         "
           image={saftey2}
         />
@@ -62,7 +62,7 @@ function SafetyContent() {
       <SlideUp>
         <About
           header="Commitment to Excellence:"
-          body="At All State Specialist LLC., our commitment to safety goes hand in hand with our dedication to delivering excellence in all aspects of our work. By prioritizing safety, we not only protect lives but also ensure the successful completion of projects on time, within budget, and to the highest quality standards."
+          body="At Arizona Standards., our commitment to safety goes hand in hand with our dedication to delivering excellence in all aspects of our work. By prioritizing safety, we not only protect lives but also ensure the successful completion of projects on time, within budget, and to the highest quality standards."
           image={saftey3}
         />
       </SlideUp>

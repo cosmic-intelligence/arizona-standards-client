@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 import OpenAnimation from "../components/openAnimation";
 
 function page() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <OpenAnimation />
@@ -19,7 +23,7 @@ function page() {
               className="underline text-orange"
               href="mailto:email@example.com"
             >
-              All State Specialist LLC.
+              Arizona Standards.
             </a>{" "}
             and our dedicated team will be delighted to assist you. Let&apos;s
             build something great together!

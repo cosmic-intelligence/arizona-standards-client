@@ -108,7 +108,7 @@ function ServicesAnimation() {
           {letters.map((i, index) => (
             <p
               key={i + index}
-              className={`text-5xl sm:text-7xl md:text-7xl lg:text-[200px] font-forum uppercase ${
+              className={`text-5xl sm:text-7xl md:text-7xl lg:text-[200px] uppercase ${
                 i === "u" || i === "c" ? "flip-letter text-orange" : "text1"
               } ${i === "" ? "ml-4" : ""} ${
                 index % 2 === 0 ? "text-slide-up" : "text-slide-down"

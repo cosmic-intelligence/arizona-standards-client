@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="w-full flex flex-col items-center justify-center pt-12 p-3 sm:p-6 pb-12">
       <div>
-        <p className="font-forum text-5xl text-center">
+        <p className="text-5xl text-center">
           Let&apos;s Work Together!
         </p>
         <div className="flex items-center justify-center mt-4">
@@ -17,7 +17,7 @@ function Footer() {
           <ArrowUpRightIcon className="text-orange h-4 w-4 text-blue-500" />
         </div>
       </div>
-      <p className="text-xs mt-16">® All State Specialist LLC. - 2023</p>
+      <p className="text-xs mt-16">® Arizona Standards. - 2024</p>
     </div>
   );
 }

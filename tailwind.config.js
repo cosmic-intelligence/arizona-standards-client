@@ -21,9 +21,10 @@ module.exports = {
         900: "#313131",
         950: "#1f1f1f",
       },
-      white: "#F2F2F2",
-      orange: "#FD6A3F",
+      white: "#fff",
+      orange: "#666",
       red: "#ef4444",
+      dark: "#000",
     },
     extend: {
       backgroundImage: {
@@ -32,8 +33,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "work-sans": ['"Work Sans"', "sans-serif"],
-        forum: ['"Forum"', "cursive"],
+        "work-sans": ['Roboto"', "sans-serif"],
       },
     },
   },

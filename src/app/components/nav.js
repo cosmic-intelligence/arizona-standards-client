@@ -11,8 +11,9 @@ function Nav() {
   const pathname = usePathname();
   return (
     <>
-      <div className="fixed h-[70px] w-full z-40 -mt-1">
-        <div className="w-full flex justify-between items-center p-2 md:pl-8 md:pr-8 h-[70px] bg-black-950">
+
+      <div className="fixed h-[70px] w-full z-40 -mt-1 shadow-[rgba(0,0,25,0.1)_0px_10px_4px_0px]">
+        <div className="w-full flex justify-between items-center p-2 md:pl-8 md:pr-8 h-[70px] bg-white">
           <Link href="/">
             <Image
               src={logo}
@@ -23,62 +24,57 @@ function Nav() {
 
           <div className="hidden md:flex items-center space-x-12">
             <Link
-              className={`${
-                pathname === "/about" ? "text-orange" : ""
-              } font-bold`}
+              className={`${pathname === "/about" ? "font-bold" : ""
+                }`}
               href="/about"
             >
               About
             </Link>
             <Link
-              className={`${
-                pathname === "/services" ? "text-orange" : ""
-              } font-bold`}
+              className={`${pathname === "/services" ? "font-bold" : ""
+                }`}
               href="/services"
             >
               Services
             </Link>
             <Link
-              className={`${
-                pathname === "/safety" ? "text-orange" : ""
-              } font-bold`}
+              className={`${pathname === "/safety" ? "font-bold" : ""
+                }`}
               href="/safety"
             >
               Safety
             </Link>
             <Link
-              className={`${
-                pathname === "/careers" ? "text-orange" : ""
-              } font-bold`}
+              className={`${pathname === "/careers" ? "font-bold" : ""
+                }`}
               href="/careers"
             >
               Careers
             </Link>
             <Link
-              className={`${
-                pathname === "/contact" ? "text-orange" : ""
-              } font-bold`}
+              className={`${pathname === "/contact" ? "font-bold" : ""
+                }`}
               href="/contact"
             >
               Contact
             </Link>
-            <Link
+            {/* <Link
               className={`${
-                pathname === "/merch" ? "text-orange" : ""
-              } font-bold`}
+                pathname === "/merch" ? "font-bold" : ""
+              }`}
               href="/merch"
             >
               Merch
-            </Link>
+            </Link> */}
           </div>
 
           <div
             onClick={() => setShowMobileNav(true)}
             className="pointer md:hidden p-6"
           >
-            <div className="h-1 w-10 bg-white rounded-md" />
-            <div className="mt-1.5 h-1 w-10 bg-white rounded-md" />
-            <div className="mt-1.5 h-1 w-10 bg-white rounded-md" />
+            <div className="h-1 w-10 bg-black-950 rounded-md" />
+            <div className="mt-1.5 h-1 w-10 bg-black-950 rounded-md" />
+            <div className="mt-1.5 h-1 w-10 bg-black-950 rounded-md" />
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ function ServicesContent() {
           reverse
         />
         <ServicesCard
-          body="All State Specialist LLC. specializes in wet utilities, encompassing the installation and maintenance of water and sewer systems. From underground pipe installations to pump stations and stormwater management, we have the knowledge and experience to handle projects of varying complexities. We adhere to industry standards and regulations, ensuring the safe and efficient operation of wet utility systems."
+          body="Arizona Standards. specializes in wet utilities, encompassing the installation and maintenance of water and sewer systems. From underground pipe installations to pump stations and stormwater management, we have the knowledge and experience to handle projects of varying complexities. We adhere to industry standards and regulations, ensuring the safe and efficient operation of wet utility systems."
           title="Wet Utilities"
           image={wetUtilitiesImage}
         />
@@ -33,7 +33,7 @@ function ServicesContent() {
           reverse
         />
         {/* <ServicesCard
-          body="All State Specialist LLC. is equipped to construct a wide range of structures, from commercial buildings to industrial facilities. Our team of engineers, architects, and skilled tradespeople collaborate to deliver structurally sound and visually impressive results. We adhere to building codes, quality standards, and client specifications to create functional and aesthetically pleasing structures that stand the test of time."
+          body="Arizona Standards. is equipped to construct a wide range of structures, from commercial buildings to industrial facilities. Our team of engineers, architects, and skilled tradespeople collaborate to deliver structurally sound and visually impressive results. We adhere to building codes, quality standards, and client specifications to create functional and aesthetically pleasing structures that stand the test of time."
           title="Structure"
           image={structuresImages}
         /> */}

@@ -15,10 +15,10 @@ function OurServices() {
   return (
     <div className="w-full flex flex-col justify-center lg:flex-row md:p-6">
       <div className="p-3 md:pr-4 md:w-96 flex-shrink-0">
-        <p className="font-forum text-5xl whitespace-nowrap">Our Services</p>
+        <p className="text-5xl whitespace-nowrap">Our Services</p>
         <div>
           <p>
-            At All State Specialist LLC., we pride ourselves on offering a
+            At Arizona Standards., we pride ourselves on offering a
             diverse range of construction services to meet the needs of our
             clients in the most efficient and cost-effective manner. With our
             expertise and experience, we deliver exceptional results across

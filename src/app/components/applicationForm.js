@@ -62,7 +62,7 @@ const ApplicationForm = ({ baseUrl }) => {
     <div className="w-full">
       <p className="font-bold text-2xl">Success!</p>
       <p>
-        Thank you for applying to All State Specialist! Your job application has
+        Thank you for applying to Arizona Standards! Your job application has
         been successfully submitted. Our team will review your application
         carefully. We will be in touch soon. Good luck!
       </p>
@@ -98,12 +98,12 @@ const ApplicationForm = ({ baseUrl }) => {
           ) : (
             <div>
               <div className="p-2">
-                <p className="font-forum text-5xl whitespace-nowrap">
+                <p className="text-5xl whitespace-nowrap">
                   Apply Now
                 </p>
                 <p className="mt-4">
-                  Thank you for your interest in joining All State Specialist
-                  LLC. We look forward to reviewing your application and
+                  Thank you for your interest in joining Arizona Standards
+                  We look forward to reviewing your application and
                   exploring the possibilities of building greatness together.
                 </p>
                 <p className="font-bold mt-2">
@@ -119,7 +119,7 @@ const ApplicationForm = ({ baseUrl }) => {
                     </p>
                     <input
                       required
-                      className="bg-black-800 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full"
+                      className="border-2 border-black-200 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full"
                       type="text"
                       name="role"
                       value={emailData.role}
@@ -135,7 +135,7 @@ const ApplicationForm = ({ baseUrl }) => {
                     </p>
                     <input
                       required
-                      className="bg-black-800 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full flex-1"
+                      className="border-2 border-black-200 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full flex-1"
                       type="text"
                       name="fname"
                       value={emailData.fname}
@@ -149,7 +149,7 @@ const ApplicationForm = ({ baseUrl }) => {
                     </p>
                     <input
                       required
-                      className="bg-black-800 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full flex-1"
+                      className="border-2 border-black-200 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full flex-1"
                       type="text"
                       name="lname"
                       value={emailData.lname}
@@ -166,7 +166,7 @@ const ApplicationForm = ({ baseUrl }) => {
                       required
                       type="email"
                       name="email"
-                      className="bg-black-800 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full"
+                      className="border-2 border-black-200 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full"
                       value={emailData.email}
                       onChange={handleInputChange}
                     />
@@ -182,7 +182,7 @@ const ApplicationForm = ({ baseUrl }) => {
                       required
                       type="tel"
                       name="phone"
-                      className="bg-black-800 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full"
+                      className="border-2 border-black-200 rounded-full text-white py-3 pl-3 ring-0 outline-0 w-full"
                       value={emailData.phone}
                       onChange={handleInputChange}
                     />
@@ -244,31 +244,16 @@ const ApplicationForm = ({ baseUrl }) => {
               </div>
               <div className="p-2 mt-2">
                 <button
-                  className="w-full py-3 rounded-full bg-orange outline-0"
+                  className="w-full py-3 rounded-full bg-dark outline-0"
                   type="submit"
                 >
                   {isProcessing ? (
-                    <div role="status">
-                      <svg
-                        aria-hidden="true"
-                        className="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
-                        viewBox="0 0 100 101"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-                          fill="currentFill"
-                        />
-                      </svg>
+                    <div className="status text-center flex items-center justify-center w-full bg-blue-500">
+                      <p className="text-white font-bold">Loading...</p>
                       <span className="sr-only">Loading...</span>
                     </div>
                   ) : (
-                    <p className="font-bold">Submit Application</p>
+                    <p className="text-white font-bold">Submit Application</p>
                   )}
                 </button>
               </div>

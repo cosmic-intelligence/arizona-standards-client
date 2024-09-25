@@ -6,8 +6,8 @@
 
 @layer base {
   html {
-    font-family: "Work Sans", sans-serif;
-    color: #F2F2F2;
-    background-color: #1F1F1F;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    background-color: #fff;
   }
 }

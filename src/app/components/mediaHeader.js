@@ -3,12 +3,13 @@ import React, { useLayoutEffect } from "react";
 import Image from "next/image";
 import ScrollDown from "./scrollDown";
 import { gsap } from "gsap";
-import logo from "../../../public/logo-white.png";
+// import logo from "../../../public/logo-white.png";
+import helmet from "../../../public/helmet.png";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function MediaHeader() {
+function MediaHeader({ header, body, image }) {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(".mouse", {
@@ -26,29 +27,24 @@ function MediaHeader() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen">
-      <div className="absolute w-full h-full bg-black-950 opacity-50 z-10" />
-      <video
-        loop
-        autoPlay
-        muted
-        playsInline
-        className="absolute w-full h-full object-cover"
-      >
-        <source src="/all-state.mov" type="video/mp4" />
-      </video>
-      <div className="relative w-full h-full flex flex-col items-center justify-center z-20">
-        <div className="-mt-24 flex flex-col items-center w-full">
-          <Image
-            src={logo}
-            className="h-full w-48 lg:w-1/6 max-w-xl object-contain lg:mb-10"
-            alt="Picture of the author"
-          />
-          <p className="text-2xl lg:text-5xl font-bold text-center max-w-3xl">
-            Your <span className="text-orange">Trusted Partner</span> for
-            Construction Excellence in the Phoenix Area!
+    <div className="w-full h-screen flex flex-row">
+      <div className="w-full md:w-1/2 h-full flex flex-row items-center justify-center p-10">
+        <div>
+          <p className="text-2xl lg:text-5xl font-bold text-left max-w-2xl">
+            {header}
+          </p>
+          <p className="text-xl text-left max-w-2xl mt-4">
+            {body}
           </p>
         </div>
+      </div>
+      <div className="hidden md:block w-1/2 h-full flex flex-row items-center justify-center p-10">
+        <Image
+          src={image}
+          className="`
+            h-full w-full object-contain"
+          alt="logo"
+        />
       </div>
       <div className="absolute bottom-1 w-full mouse">
         <ScrollDown />

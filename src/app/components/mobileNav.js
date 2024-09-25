@@ -82,9 +82,8 @@ function MobileNav({ setShowMobileNav }) {
       >
         <div className="flex items-center cursor-pointer link-animate">
           <p
-            className={`${
-              pathname === route ? "underline" : ""
-            } text-7xl font-bold cursor-pointer p-2`}
+            className={`${pathname === route ? "underline" : ""
+              } text-7xl font-bold cursor-pointer p-2`}
           >
             {name}
           </p>
@@ -99,7 +98,7 @@ function MobileNav({ setShowMobileNav }) {
       <div className="flex w-full justify-end h-full">
         <div
           ref={containerRef}
-          className="w-full h-full bg-orange p-2 flex flex-col justify-between"
+          className="w-full h-full bg-white p-2 flex flex-col justify-between"
         >
           <div>
             <div className="flex justify-between items-center fade-in">
@@ -127,12 +126,12 @@ function MobileNav({ setShowMobileNav }) {
 
               <MobileLink name="Contact" route="/contact" />
 
-              <MobileLink name="Merch" route="/merch" />
+              {/* <MobileLink name="Merch" route="/merch" /> */}
             </div>
           </div>
           <div className="pb-20">
             <p className="text-xs fade-in">
-              Copyright © 2023 All State Specialist LLC. All Rights Reserved.
+              Copyright © 2024 Arizona Standards. All Rights Reserved.
             </p>
           </div>
         </div>

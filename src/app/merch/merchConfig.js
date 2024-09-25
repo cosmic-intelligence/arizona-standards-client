@@ -141,7 +141,7 @@ export const merch = [
   },
   {
     id: "",
-    title: "All State Specialist Safety Vest",
+    title: "Arizona Standards Safety Vest",
     price: {
       sm: "$30",
       md: "$30",
@@ -199,7 +199,7 @@ export const merch = [
 // 9FIFTY FIT: Features a classic, throwback look with a flat visor that can curve with a full crown. Includes a structured front panel for stability and an open back with snapback closure.
 // image: hat_new_leather_black
 
-// All State Specialist Safety Vest -Small - 2xl Available - $30
+// Arizona Standards Safety Vest -Small - 2xl Available - $30
 // Safety Vest - ANSI/ISEA 107-2015 | Type R, Class 2
 // 2" Silver Reflective Tape w/ Contrasting Trim
 // 100% Polyester Mesh Material 

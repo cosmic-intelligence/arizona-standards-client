@@ -47,7 +47,7 @@ const Wrapper = ({ baseUrl, pass }) => {
         {access ? (
           <>
             <p className="opacity-20 font-bold whitespace-nowrap text-[3vw] tracking-[.3rem] sm:tracking-[.5rem] text-center">
-              All State Merchandise
+              Arizona Standards Merchandise
             </p>
             <div className="w-full flex justify-center items-center">
               <div className="max-w-2xl mt-3">

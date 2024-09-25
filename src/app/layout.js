@@ -4,11 +4,11 @@ import Footer from "./components/footer";
 import Provider from "./components/provider";
 
 export const metadata = {
-  title: "All State Specialist LLC.",
+  title: "Arizona Standards.",
   description:
-    "Welcome to All State Specialist LLC, your trusted construction partner in Phoenix, Arizona. We specialize in providing top-quality construction services for residential, commercial, and industrial projects. With years of experience in the industry, we pride ourselves on delivering exceptional results that meet the highest standards.",
+    "Welcome to Arizona Standards, your trusted construction partner in Phoenix, Arizona. We specialize in providing top-quality construction services for residential, commercial, and industrial projects. With years of experience in the industry, we pride ourselves on delivering exceptional results that meet the highest standards.",
   keywords:
-    "All State Specialist LLC, construction services, Phoenix Arizona, residential construction, commercial construction, industrial construction, construction company, general contractor, licensed builders, construction experts, construction solutions, building contractors, construction management.",
+    "Arizona Standards, construction services, Phoenix Arizona, residential construction, commercial construction, industrial construction, construction company, general contractor, licensed builders, construction experts, construction solutions, building contractors, construction management.",
 };
 
 export default function RootLayout({ children }) {
@@ -31,18 +31,7 @@ export default function RootLayout({ children }) {
 
           <Footer />
         </Provider>
-        <iframe
-          src="https://cosmic-chatbot-nextjs-ixvp75opk-cosmic-intelligences-projects.vercel.app/"
-          style={{
-            position: "fixed",
-            bottom: "0",
-            right: "0",
-            width: "500px", // Updated width
-            height: "400px", // Updated height
-            border: "none",
-            padding: "20px", // Added padding
-          }}
-        ></iframe>
+        {/* <iframe src="http://localhost:3000"></iframe> */}
       </body>
     </html>
   );

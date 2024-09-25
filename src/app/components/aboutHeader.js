@@ -11,9 +11,8 @@ import SlideUp from "./slideUp";
 function AboutHeader() {
   const About = ({ reverse, header, body, image }) => (
     <div
-      className={`flex justify-center items-center space-x-4 mt-14 flex-wrap ${
-        reverse ? "flex-row-reverse" : ""
-      }`}
+      className={`flex justify-center items-center space-x-4 mt-14 flex-wrap ${reverse ? "flex-row-reverse" : ""
+        }`}
     >
       <div className="h-64 w-64 m-2 bg-white shrink-0">
         <Image
@@ -32,8 +31,8 @@ function AboutHeader() {
   return (
     <div className="p-3 sm:p-6">
       <HeaderTextSlide
-        headline="Unveiling Our Foundation of Expertise: Discover the All State Specialist LLC. Story!"
-        orangeWords="All State Specialist LLC. Story!"
+        headline="Unveiling Our Foundation of Expertise: Discover the Arizona Standards. Story!"
+        orangeWords="Arizona Standards. Story!"
       />
       <div className="w-full flex flex-col items-center mt-28">
         <div>
@@ -43,7 +42,7 @@ function AboutHeader() {
           <p className="mt-4 text-4xl sm:max-w-3xl">
             Established in 2012,{" "}
             <span className="font-bold text-orange">
-              All State Specialist LLC.
+              Arizona Standards.
             </span>{" "}
             has been proudly serving the Phoenix community and surrounding
             regions with top-notch construction services. With our unwavering
@@ -63,7 +62,7 @@ function AboutHeader() {
             image={work}
             reverse
             header="Comprehensive Construction Solutions:"
-            body="At All State, we specialize in a wide range of construction services, catering to diverse sectors including commercial, site work, retail, multi-family, industrial, residential communities, public works, flood controls, and heavy highway projects. Whether it's constructing state-of-the-art commercial buildings, developing vibrant residential communities, or undertaking complex infrastructure projects, we have the capabilities and resources to bring your vision to life."
+            body="At Arizona Standards, we specialize in a wide range of construction services, catering to diverse sectors including commercial, site work, retail, multi-family, industrial, residential communities, public works, flood controls, and heavy highway projects. Whether it's constructing state-of-the-art commercial buildings, developing vibrant residential communities, or undertaking complex infrastructure projects, we have the capabilities and resources to bring your vision to life."
           />
         </SlideUp>
         <SlideUp>
@@ -78,7 +77,7 @@ function AboutHeader() {
             image={client}
             header="Client-Focused Approach:"
             reverse
-            body="At All State Specialist LLC., our clients are at the heart of everything we do. We strive to build strong, lasting relationships based on trust, transparency, and open communication. We work closely with our clients to understand their unique needs, goals, and project requirements. From the initial planning stages to project completion, we maintain a collaborative approach, ensuring that each project is completed on time, within budget, and to the highest standards of quality."
+            body="At Arizona Standards., our clients are at the heart of everything we do. We strive to build strong, lasting relationships based on trust, transparency, and open communication. We work closely with our clients to understand their unique needs, goals, and project requirements. From the initial planning stages to project completion, we maintain a collaborative approach, ensuring that each project is completed on time, within budget, and to the highest standards of quality."
           />
         </SlideUp>
       </div>

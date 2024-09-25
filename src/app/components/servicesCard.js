@@ -42,7 +42,7 @@ function ServicesCard({ title, image, body, reverse }) {
 
       <div className="w-full lg:w-1/2 max-w-7xl mt-4 lg:mt-0 lg:px-4 flex flex-col justify-between">
         <div>
-          <p className="font-forum text-6xl">{title}</p>
+          <p className="text-6xl">{title}</p>
           <p className="mt-2 text-sm opacity-80">{body}</p>
         </div>
       </div>
