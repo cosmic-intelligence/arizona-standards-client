@@ -4,14 +4,11 @@ import ServicesContent from "../components/servicesContent";
 import ServicesAnimation from "../components/servicesAnimation";
 import HeaderTextSlide from "../components/headerTextSlide";
 import OpenAnimation from "../components/openAnimation";
+import PageWrapper from "../components/pageWrapper";
+
 function page() {
-
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
-    <>
+    <PageWrapper>
       <OpenAnimation />
       <div className="max-w-full">
         <div className="h-24 sm:h-12 w-full" />
@@ -24,7 +21,7 @@ function page() {
         <ServicesAnimation />
         <ServicesContent />
       </div>
-    </>
+    </PageWrapper>
   );
 }
 

@@ -3,13 +3,11 @@ import React from "react";
 import SafetyContent from "../components/safetyContent";
 import HeaderTextSlide from "../components/headerTextSlide";
 import OpenAnimation from "../components/openAnimation";
+import PageWrapper from "../components/pageWrapper";
 
 function page() {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
-    <>
+    <PageWrapper>
       <OpenAnimation />
       <div className="p-3 sm:p-6">
         <div className="h-24 sm:h-12 w-full" />
@@ -20,7 +18,7 @@ function page() {
         />
         <SafetyContent />
       </div>
-    </>
+    </PageWrapper>
   );
 }
 

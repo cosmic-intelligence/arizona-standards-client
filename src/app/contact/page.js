@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
 import OpenAnimation from "../components/openAnimation";
+import PageWrapper from "../components/pageWrapper";
 
 function page() {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
-    <>
+    <PageWrapper>
       <OpenAnimation />
       <div className="h-24 sm:h-12 w-full" />
       <div className="p-2 sm:p-8 flex flex-col justify-center items-center w-full">
@@ -21,7 +19,7 @@ function page() {
             we&apos;re here to hear from you! Drop us an email at{" "}
             <a
               className="underline text-orange"
-              href="mailto:email@example.com"
+              href="mailto:controller@arizonastandards.com"
             >
               Arizona Standards.
             </a>{" "}
@@ -32,16 +30,16 @@ function page() {
         <div className="border-[gray] border-t-2 border-b-2 py-4 flex flex-row justify-center mt-12 space-x-10">
           <div>
             <p className="font-bold">Address</p>
-            <p>14155 N 83rd Ave</p>
-            <p>Peoria, AZ 85381</p>
+            <p>1721 W. Rose Garden LN. Suite 6</p>
+            <p>Phoenix, AZ 85027</p>
           </div>
           <div>
             <p className="font-bold">Contact</p>
-            <p>623-213-7180</p>
+            <p>480-393-3447</p>
           </div>
         </div>
       </div>
-    </>
+    </PageWrapper>
   );
 }
 
